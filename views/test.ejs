@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<%- include header%>
+  <form action="/users" type="post">
+      <input type="submit" value="Go in">
+  </form>
+  <div><a href="/logout">Logout</a></div>
+
+</body>
+</html>

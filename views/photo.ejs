@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+<p>Volume <input type="range" id="volume" max="100" min="0" value="60"></p>
+<div id="container">
+<!-- 显示图片-->
+<% for(var i=0;i<photos.length; i++){%>
+  <img class="pic" src="/images/<%= photos[i]%>">
+<%}%>
+<!-- 音乐列表-->
+    <% for(var i=0;i<music.length; i++){%>
+    <li class="music" title="<%= music[i]%>"></li>
+    <%}%>
+</div>
+<script src="http://code.jquery.com/jquery-1.4.1.min.js"></script>
+<script src="/javascripts/image.js"></script>
+</body>
+</html>
